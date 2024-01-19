@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="ES">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneak</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Snake JS</title>
     <style>
-        body{
+        body {
             width: 95vw;
             height: 95vh;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,55 +13,58 @@
             place-items: center;
             background-color: black;
             color: white;
+
         }
-        #lienzo{
-            
-            box-shadow:  0px 0px 20px blue;
+        #lienzo {
+            box-shadow: 0px 0px 20px rgb(1, 9, 226);
+
+        }
+        h1 {
+            text-align: center;
         }
         .container{
-            display:  flex;
+            display: flex;
             flex-direction: row;
         }
         .btn{
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            border: 5px solid rgb(56, 100, 201);
-            background-color: rgb(253, 253, 253);
+            border: 5px solid  rgb(24, 53, 159);
+            background-color: black;
+            color: white;
             font-weight: bold;
-            /* margin: 20px; */
+            margin: 20px;
         }
         .btn:active{
-            background-color: white;
-            color:  black;
+            background-color: rgb(18, 148, 144);
         }
         .left, .right{
             height: 450px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="left">
-            <button class="btn">up</button>
-            <button class="btn">down</button>
+            <button class="btn">Up</button>
+            <button class="btn">Down</button>
         </div>
-
         <div class="center">
-            <h1>snake JavaScript</h1>
-            <canvas id="lienzo" width="500" height="300"> </canvas>
-        </div>
+        <h1>
+            Snake JavaScript
+        </h1>
 
-        <div class="right">
-            <button class="btn">left</button>
-            <button class="btn">right</button>
-        </div>
+        <canvas id="lienzo" width="500" height="300"></canvas>
     </div>
-    <script src="./app.js"></script> 
+    <div class="right">
+        <button class="btn">Left</button>
+        <button class="btn">Right</button>
+    </div>
+</div>
+    <script src="./app.js"></script>
 </body>
 </html>
